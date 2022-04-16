@@ -3,7 +3,7 @@
 This is my configuration for bspwm using polybar as bar
 and for widgets eww (only vpn widget for now).
 
-!(./pics/banner.png)
+![banner](./pics/banner.png)
 
 ## Requirements
 
