@@ -8,10 +8,16 @@ First install nvcodark, and then see the [steps](#steps)
 
 ### Steps
 
-1. Copy files
+1. Remove custom folder (i have a new with my own stuff)
+
+```sh
+rm -rf ~/.config/nvim/lua/custom
+```
+
+2. Copy files
 
 ```sh
 cd <nightbspwm>/config/nvim/lua/* ~/.config/nvim/lua
 ```
 
-2. Enjoy :3
+3. Enjoy :3
