@@ -1,0 +1,20 @@
+$bg: #061115;
+$fg: #d9d7d6;
+$blue: #6791c9;
+$cyan: #67afc1;
+
+.vpn {
+  background-color: $bg;
+  font-family: CaskaydiaCove Nerd Font;
+  color: $fg;
+}
+
+.vpntitle {
+  color: $blue;
+  font-size: 17px;
+}
+
+.vpntxt {
+  color: $cyan;
+  font-size: 20px;
+}

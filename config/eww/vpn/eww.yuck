@@ -1,0 +1,35 @@
+(defwidget vpntxt []
+  (
+    box
+      :orientation "v"
+      :class "vpntxts"
+    (label :class "vpntitle" :text "VPN")
+    (label :class "vpntxt" :text ip)
+  )
+)
+(defpoll ip :interval "1s" "~/.config/polybar/scripts/vpn.sh get-ip 2>/dev/null || echo 'Not connected'")
+
+(defwidget vpn []
+  (
+    box
+      :class "vpn"
+      :orientation "h"
+    (
+      box
+        :orientation "h"
+        :valign "center"
+      (vpntxt)
+    )
+  )
+)
+
+(defwindow vpn
+  :geometry (
+    geometry
+      :x "81%"
+      :y "5%"
+      :width "210px"
+      :height "90px"
+  )
+(vpn))
+
