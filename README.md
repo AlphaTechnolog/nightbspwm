@@ -21,6 +21,7 @@ Make sure you have this packages installed in your system:
 - picom (jonaburg's fork for animations)
 - exa
 - bat (I didn't remember if for debian based is named 'batcat' check it :3)
+- playerctl
 
 ## Installation
 
