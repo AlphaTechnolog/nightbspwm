@@ -1,0 +1,31 @@
+$bg: #061115;
+$darkbg: #0A1419;
+$fg: #d9d7d6;
+$blue: #6791c9;
+$cyan: #67afc1;
+$magenta: #bc83e3;
+$divider: #1c252c;
+$green: #78b892;
+
+.music-controls {
+  background-color: $bg;
+  color: $fg;
+}
+
+.music-name {
+  color: $magenta;
+  font-size: 15px;
+}
+
+.prev-control,
+.pause-control,
+.next-control {
+  background-color: $darkbg;
+  border-top: solid 1px $divider;
+  color: $blue;
+  font-size: 30px;
+}
+
+.pause-control {
+  color: $cyan;
+}

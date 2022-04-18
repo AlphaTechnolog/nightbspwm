@@ -1,0 +1,36 @@
+(defwidget musicname []
+  (
+    label
+      :class "music-name"
+      :text name
+      :limit-width 18
+  )
+)
+(defpoll name :interval "1s" "~/.config/eww/music/scripts/control.sh get-music 2>&1")
+
+(defwidget controls []
+  (
+    box
+      :class "music-controls"
+      :orientation "v"
+    (musicname)
+    (
+      box
+        :orientation "h"
+        :valign "center"
+      (button :tooltip "Click to previous music" :onclick "scripts/control.sh prev" :class "prev-control" "玲")
+      (button :tooltip "Click to pause/play music" :onclick "scripts/control.sh pause" :class "pause-control" "懶")
+      (button :tooltip "Click to next music" :onclick "scripts/control.sh next" :class "next-control" "怜")
+    )
+  )
+)
+
+(defwindow music
+  :geometry (
+    geometry
+      :x "10%"
+      :y "5%"
+      :width "240px"
+      :height "90px"
+  )
+(controls))
