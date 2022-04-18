@@ -38,3 +38,4 @@ notifmonitod 2>&1 > /dev/null &
 
 # eww
 eww -c ~/.config/eww/vpn daemon
+eww -c ~/.config/eww/music daemon
